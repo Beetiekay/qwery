@@ -1,5 +1,5 @@
 import "../header/Navbar.css";
-import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
+import {AiFillFacebook, AiFillInstagram, AiFillTwitterCircle, AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
 
 
 const Navbar = () =>{
@@ -8,7 +8,7 @@ const Navbar = () =>{
      <div className="nav-bar">
 
       <div className="logo-header">
-      <a href="#" class="logo">QWE<span>Ry</span></a>
+      <div class="logo">QWE<span>Ry</span></div>
       </div>
        <input type="checkbox" id="check"></input>
 
@@ -19,7 +19,15 @@ const Navbar = () =>{
          <a href="#">Reviews</a>
          <a href="#">Contact</a>
      <label For="check" className="close-menu"><AiOutlineClose/></label>
-  </span>
+     </span>
+
+  <div className="h-navbar">
+        <h3>Follow</h3>
+        <a href="#"><AiFillFacebook/></a>
+        <a href="#"><AiFillInstagram/></a>
+        <a href="#"><AiFillTwitterCircle/></a>
+  </div>
+
      <label For="check" className="open-menu"><AiOutlineMenu/></label>
    </div>
       </>
